@@ -5,6 +5,8 @@ modified:
 categories: blog
 excerpt:
 tags: []
+comments: true
+share: true
 image:
   feature:
 date: 2015-11-01T22:44:55-04:00
@@ -65,7 +67,34 @@ size and corresponding vocal tract resonances.
 
 <figure>
 	<img src="/images/vowel_space_male-vs-female.jpg" alt="image">
-	<figcaption>Caption describing these two images.</figcaption>
+	<figcaption>Example of cross-talker vowel variability before (left)
+	and after (right) normalizing for differences in vocal-tract length
+	based on F3. **Top Panel**: the average vowel space for adult male and
+	adult female talkers in the vowel corpus collected by Hillenbrand et
+	al. (1995). Talkers in this corpus are from the Northern dialect
+	region of American English. **Bottom Panel**: the degree of overlap
+	among adult male productions of /ʊ/ and adult female productions of
+	/u/. Plots show individual vowel tokens (small dots), category means
+	(large dots), and 95% confidence ellipses. 
+	
+	Note that the unnormalized male and female vowel spaces (**top left
+	panel**) have approximately the same geometric configuration, but the
+	male vowels are characterized by comparatively lower absolute F1 and
+	F2 values, which reflects the fact that longer vocal tracts resonate
+	at lower frequencies than shorter vocal tracts. As a result, the
+	distribution of adult male tokens of /ʊ/ is highly overlapping with
+	the distribution of adult female tokens of /u/ in F1xF2 space
+	(**bottom left panel**). That is, the same acoustic information maps
+	onto different phonological categories with different probabilities
+	depending on the talker’s sex. Hence neither F1 nor F2 provides
+	reliable information for discriminating these vowel categories
+	across talker sex (bottom left panel, dark grey bar). Normalizing F1
+	and F2 based on F3 (which is correlated with vocal tract length)
+	considerably reduces the difference between the average male and
+	female vowel spaces (**top right panel**), while preserving the overall
+	shape of the space (i.e., the relative position of vowels). As a
+	result of F3-normalization, tokens of /ʊ/ and /u/ are less overlapping (**bottom right panel**) and, hence, more discriminable
+	despite vocal tract differences across talkers.</figcaption>
 </figure>
 
 In other words, **low-level normalization might be the outcome of
