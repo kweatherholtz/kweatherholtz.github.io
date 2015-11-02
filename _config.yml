@@ -1,12 +1,13 @@
 # Site wide configuration
 
-title: Site Title
+title: Kodi Weatherholtz
 locale: en_US
 description: Describe your website here.
-logo: site-logo.png
+#logo: site-logo.png
+logo: bio-photo.jpg
 search: true
 url: http://kweatherholtz.github.io
-url: http://localhost:4000
+#url: http://localhost:4000
 
 # Jekyll configuration
 
