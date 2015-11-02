@@ -4,13 +4,142 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://kweatherholtz.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://kweatherholtz.github.io" />
-<updated>2015-11-01T22:20:45-05:00</updated>
+<updated>2015-11-01T23:05:37-05:00</updated>
 <id>http://kweatherholtz.github.io/</id>
 <author>
   <name>Kodi Weatherholtz</name>
   <uri>http://kweatherholtz.github.io/</uri>
   <email>kweatherholtz@bcs.rochester.edu</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Speech perception and generalization across talkers and accents]]></title>
+  <link rel="alternate" type="text/html" href="http://kweatherholtz.github.io/blog/speech-perception-and-generalization/" />
+  <id>http://kweatherholtz.github.io/blog/speech-perception-and-generalization</id>
+  <published>2015-11-01T21:44:55-05:00</published>
+  <updated>2015-11-01T21:44:55-05:00</updated>
+  <author>
+    <name>Kodi Weatherholtz</name>
+    <uri>http://kweatherholtz.github.io</uri>
+    <email>kweatherholtz@bcs.rochester.edu</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;We recently submitted a research review on “Speech perception and
+generalization across talkers and accents”, which provides an overview
+of the critical concepts and debates in this domain of research. The
+manuscript is still under review, but we wanted to share the current
+version. Of course, feedback is always welcome.&lt;/p&gt;
+
+&lt;p&gt;In this paper, we review the mixture of processes that enable robust
+understanding of speech across talkers despite the &lt;em&gt;lack of invariance&lt;/em&gt;.
+These processes include (i) automatic pre-speech adjustments of the
+distribution of energy over acoustic frequencies (&lt;strong&gt;&lt;em&gt;normalization&lt;/em&gt;&lt;/strong&gt;); (ii)
+sensitivity to category-relevant acoustic cues that are invariant across
+talkers (&lt;strong&gt;&lt;em&gt;acoustic invariance&lt;/em&gt;&lt;/strong&gt;); (iii) sensitivity to
+articulatory/gestural cues, which can be perceived directly
+(&lt;strong&gt;&lt;em&gt;audio-visual integration&lt;/em&gt;&lt;/strong&gt;) or recovered from the acoustic signal
+(articulatory recovery); (iv) implicit statistical learning of
+talker-specific properties (&lt;strong&gt;&lt;em&gt;adaptation, perceptual recalibration&lt;/em&gt;&lt;/strong&gt;); and
+(v) the use of past experiences (e.g., specific exemplars) and
+structured knowledge about pronunciation variation (e.g., patterns of
+variation that exist across talkers with the same accent) to guide
+speech perception (&lt;strong&gt;&lt;em&gt;exemplar-based recognition&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;generalization&lt;/em&gt;&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;While there is substantial compelling evidence for each of these
+processes, none currently provides a sufficient account of how listeners
+cope with variability in speech. In our research overview, we highlight
+the successes and limitations of these various approaches. More
+importantly, we emphasize overlap and complementarity among lines of
+research that are often viewed as orthogonal or opposing (e.g.,
+normalization and statistical learning).&lt;/p&gt;
+
+&lt;p&gt;In our view, it is the integration of these various processes that is
+the big open question in research on speech perception. Integrating
+these accounts is by no means trivial, as evidenced by the on-going
+debate in speech perception concerning normalization, exemplar-based and
+statistical learning accounts. However, we believe that reexamining the
+basic assumptions that underlie these accounts will help point the way
+forward.&lt;/p&gt;
+
+&lt;p&gt;For example, consider normalization. Normalization is often
+conceptualized as an automatic low-level process that stems from basic
+aspects of the auditory perceptual system and hence does not involve
+learning. Historically, one of the major successes of the normalization
+approach to speech perception is accounting for how listeners cope with
+variability due to vocal tract differences across talkers: e.g.,
+interpreting category-relevant acoustic cues (such as $F_1$ and $F_2$ for
+vowels) with respect to acoustic cues that provide an estimate of the
+talker’s vocal tract characteristics (e.g., $F_0$ and $F_3$; see Figure 1). The basic
+ability to interpret speech cues in relation to one another (e.g., $F_1$
+relative to $F_3$) might stem from biologically-determined aspects of the
+auditory system. However, the use of specific cues like $F_0$ and $F_3$ as the
+basis for normalization might stem from statistical learning during
+early development about the relationship between a talker’s vocal tract
+size and corresponding vocal tract resonances.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/images/vowel_space_male-vs-female.jpg&quot; alt=&quot;image&quot; /&gt;
+	&lt;figcaption&gt;Caption describing these two images.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In other words, &lt;strong&gt;low-level normalization might be the outcome of
+statistical learning&lt;/strong&gt;. If so, this would enable us to situate a wide
+range of perceptual phenomena along a continuum of statistical learning
+that operates at various time scales and at various levels of
+granularity. Phenomena like talker-specific phonetic recalibration
+(i.e., fine-tuning phonetic category boundaries according to
+talker-specific cue distributions) are situated at one end of the
+continuum — as these adjustments occur continuously in response to the
+statistics of the ambient environment. Phenomena like vocal tract
+normalization might form the other end of the continuum — as listeners
+(in principle) only need to learn once, presumably during early
+development, about how the size and the shape of the vocal tract affect
+the distribution of energy at certain frequency ranges. Presumably (and
+speculatively), if the statistical patterns are sufficiently robust
+across talkers (e.g., the relationship between vocal tract
+characteristics and $F_0$ or $F_3$), then it would be beneficial (i.e.,
+efficient) for the speech perception system to have evolved to adjust
+for this relationship at an early stage of processing (e.g., automatic
+low-level “normalization”). For statistical patterns that are specific
+to particular talkers or groups, perhaps the relevant perceptual
+adjustments occur at a later stage of processing (e.g., the mapping of
+percepts to higher-level categories).&lt;/p&gt;
+
+&lt;p&gt;This emphasis on statistical learning might also provide traction in the
+debate between normalization and exemplar-based accounts of speech
+perception. As has been discussed extensively in the literature, one of
+the &lt;strong&gt;primary criticisms of normalization accounts&lt;/strong&gt; is that fine stimulus
+details are not “filtered out” during perception — as often implicitly
+or explicitly assumed in normalization proposals — but rather these
+details are encoded in memory and influence subsequent processing. In
+turn, one &lt;strong&gt;criticism of exemplar-based approaches&lt;/strong&gt; is that they do not
+provide a straight forward account for some of the most compelling
+evidence of low-level normalization: i.e., that speech sounds are
+interpreted relative to frequency information in the surrounding
+context, even when this “context” is non-speech sine-wave tones (see
+work by Holt and colleagues).&lt;/p&gt;
+
+&lt;p&gt;These criticisms indicate that &lt;strong&gt;neither normalization nor exemplar-based
+accounts are sufficient&lt;/strong&gt;. Perhaps these accounts are not contradictory,
+but rather form part of a complex speech perception system that is
+capable of statistical learning at various time scales and levels of
+granularity. Statistical learning in speech involves pattern abstraction
+over a distribution of speech episodes. Thus, if both talker
+normalization (i.e., sensitivity to talker invariant information) and
+talker-specific speech perception can be conceptualized as the result of
+statistical learning (potentially at different time scales), then there
+is no debate about the storage of episodic information. Rather, the
+central questions concern how the learning is implemented and the
+conditions under which learning leads to low-level versus higher-level
+adjustments in how speech stimuli are perceived.&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://kweatherholtz.github.io/blog/speech-perception-and-generalization/&quot;&gt;Speech perception and generalization across talkers and accents&lt;/a&gt; was originally published by Kodi Weatherholtz at &lt;a href=&quot;http://kweatherholtz.github.io&quot;&gt;Kodi Weatherholtz&lt;/a&gt; on November 01, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
