@@ -1,71 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://kweatherholtz.github.io/blog/speech-perception-and-generalization/</loc>
-    <lastmod>2015-11-01T21:44:55-05:00</lastmod>
+    <loc>http://localhost:4000/blog/speech-perception-and-generalization/</loc>
+    <lastmod>2015-08-06T20:57:20-04:00</lastmod>
   </url>
   <url>
-    <loc>http://kweatherholtz.github.io/blog/mathjax-example/</loc>
-    <lastmod>2015-08-10T08:08:50-04:00</lastmod>
+    <loc>http://localhost:4000/blog/intro-to-ggplot/</loc>
+    <lastmod>2015-08-01T20:57:20-04:00</lastmod>
   </url>
   <url>
-    <loc>http://kweatherholtz.github.io/blog/hello-world/</loc>
-    <lastmod>2014-08-08T15:39:55-04:00</lastmod>
+    <loc>http://localhost:4000/index-old.html</loc>
+    <lastmod>2015-11-23T22:49:59-05:00</lastmod>
   </url>
   <url>
-    <loc>http://kweatherholtz.github.io/articles/author-override/</loc>
-    <lastmod>2014-06-19T00:00:00-04:00</lastmod>
+    <loc>http://localhost:4000/articles/</loc>
+    <lastmod>2015-11-23T22:49:59-05:00</lastmod>
   </url>
   <url>
-    <loc>http://kweatherholtz.github.io/articles/code-highlighting-post/</loc>
-    <lastmod>2013-08-16T00:00:00-04:00</lastmod>
+    <loc>http://localhost:4000/blog/</loc>
+    <lastmod>2015-11-23T22:49:59-05:00</lastmod>
   </url>
   <url>
-    <loc>http://kweatherholtz.github.io/articles/sample-link-post/</loc>
-    <lastmod>2013-08-12T00:00:00-04:00</lastmod>
+    <loc>http://localhost:4000/publications/</loc>
+    <lastmod>2015-11-23T22:49:59-05:00</lastmod>
   </url>
   <url>
-    <loc>http://kweatherholtz.github.io/articles/video-post/</loc>
-    <lastmod>2013-06-25T00:00:00-04:00</lastmod>
+    <loc>http://localhost:4000/tags/</loc>
+    <lastmod>2015-11-23T22:49:59-05:00</lastmod>
   </url>
   <url>
-    <loc>http://kweatherholtz.github.io/articles/readability-feature-post/</loc>
-    <lastmod>2013-05-23T00:00:00-04:00</lastmod>
+    <loc>http://localhost:4000/</loc>
+    <lastmod>2015-11-23T22:49:59-05:00</lastmod>
   </url>
   <url>
-    <loc>http://kweatherholtz.github.io/articles/sample-post-images/</loc>
-    <lastmod>2013-05-22T00:00:00-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://kweatherholtz.github.io/articles/readability-post/</loc>
-    <lastmod>2012-05-22T00:00:00-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://kweatherholtz.github.io/articles/sample-post/</loc>
-    <lastmod>2011-03-10T00:00:00-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://kweatherholtz.github.io/</loc>
-    <lastmod>2015-11-01T23:05:37-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://kweatherholtz.github.io/articles/</loc>
-    <lastmod>2015-11-01T23:05:37-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://kweatherholtz.github.io/blog/</loc>
-    <lastmod>2015-11-01T23:05:37-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://kweatherholtz.github.io/tags/</loc>
-    <lastmod>2015-11-01T23:05:37-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://kweatherholtz.github.io/about/</loc>
-    <lastmod>2015-11-01T23:05:37-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://kweatherholtz.github.io/theme-setup/</loc>
-    <lastmod>2015-11-01T23:05:37-05:00</lastmod>
+    <loc>http://localhost:4000/tutorials/ggplot/ggplot_ling_tutorial.html</loc>
+    <lastmod>2013-10-11T11:45:44-04:00</lastmod>
   </url>
 </urlset>

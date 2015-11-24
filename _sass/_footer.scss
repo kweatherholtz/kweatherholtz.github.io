@@ -9,9 +9,10 @@
   font-family: $alt-font;
   @include font-size(14);
   font-style: italic;
-  color: lighten($text-color,20);
+  background-color: #222;
+  color: $footnote-text-color;
   a {
-    color: lighten($text-color,20);
+    color: lighten($text-color,50);
   }
 }
 
@@ -24,7 +25,7 @@
   a {
     padding: 4px 8px;
     &:hover {
-      color: $black;
+      color: $white;
     }
   }
 }

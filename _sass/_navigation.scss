@@ -2,8 +2,12 @@
    Top navigation
    ========================================================================== */
 
+
+
 .navigation-wrapper {
   text-align: center;
+  position: fixed;
+  width: 100%;
   @include clearfix;
   ul {
     display: inline-block;
@@ -11,10 +15,10 @@
     vertical-align: top;
     margin: 0 0 50px;
     padding: 4px 20px;
-    background-color: $black;
+    background-color: rgba(0,0,0,.7);
     @include media($medium) {
       width: auto;
-      @include rounded(0 0 10px 10px);
+      @include rounded(10px 10px 10px 10px);
     }
     @include clearfix;
   }
@@ -44,7 +48,7 @@
     color: $white;
     @include rounded(4px);
     &:hover {
-      background-color: lighten($black, 10);
+      background-color: lighten($black, 15);
     }
   }
 }

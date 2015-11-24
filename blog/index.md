@@ -1,8 +1,17 @@
 ---
 layout: page
-title: Blog
+title: Blog Posts
 excerpt: "An archive of blog posts sorted by date."
+image:
+  feature: cottonwood2.png
+  credit: 
+  creditlink: 
 search_omit: true
+---
+
+
+<a markdown="0" href="/tags/" class="btn">Tag index</a>
+
 ---
 
 <ul class="post-list">

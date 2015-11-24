@@ -1,0 +1,280 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>An introduction to ggplot &#8211; Kodi Weatherholtz</title>
+<meta name="description" content="Tutorial on advanced data visualization in R">
+<meta name="keywords" content="R, ggplot, data visualization, tutorial">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="An introduction to ggplot">
+<meta name="twitter:description" content="Tutorial on advanced data visualization in R">
+<meta name="twitter:site" content="@kweather">
+<meta name="twitter:creator" content="@kweather">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/profile-photo.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="An introduction to ggplot">
+<meta property="og:description" content="Tutorial on advanced data visualization in R">
+<meta property="og:url" content="http://localhost:4000/blog/intro-to-ggplot/">
+<meta property="og:site_name" content="Kodi Weatherholtz">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/blog/intro-to-ggplot/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Kodi Weatherholtz Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/cv/weatherholtz_cv.pdf" >CV</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/#contact" >Contact</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/#publications" >Publications</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/#research" >Research</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/#teaching" >Teaching</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/#blog" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        
+          <h1 class="entry-title">An introduction to ggplot</h1>
+        
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#R" title="Pages tagged R">R</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#ggplot" title="Pages tagged ggplot">ggplot</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#data visualization" title="Pages tagged data visualization">data visualization</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#tutorial" title="Pages tagged tutorial">tutorial</a></span>
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://localhost:4000/images/profile-photo.jpg" class="bio-photo" alt="Kodi Weatherholtz bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Kodi Weatherholtz</span></span>
+        <span class="entry-date date published"><time datetime="2015-08-01T20:57:20-04:00"><i class="fa fa-calendar-o"></i> August 01, 2015</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=R,ggplot,datavisualization,tutorial&amp;text=An%20introduction%20to%20ggplot&amp;url=http://localhost:4000/blog/intro-to-ggplot/&amp;via=kweather" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/intro-to-ggplot/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/blog/intro-to-ggplot/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p><a href="http://ggplot2.org/">ggplot2</a> is my go-to tool in R for producing complex publication-quality graphics. Several years ago, I developed a tutorial that provides a basic introduction to ggplot2, along with an overview of more advanced functionality for researchers dealing with language data. Here are the slides (for posterity!). These slides were produced in <a href="https://www.rstudio.com/">RStudio</a> using <a href="http://yihui.name/knitr/">knitr</a>. </p>
+
+<ul>
+  <li><strong>tutorial</strong>: <a href="/tutorials/ggplot/ggplot_ling_tutorial.html">slide show</a></li>
+  <li><strong>data sets</strong>: (1) <a href="/tutorials/ggplot/datasets/Peterson_Barney1952_vowels.txt">Peterson and Barney (1952) vowels</a>; (2) <a href="/tutorials/ggplot/datasets/fakedata.txt">fakedata.txt</a>; (3) <a href="/tutorials/ggplot/datasets/fakedata_geo.txt">fakedata_geo.txt</a></li>
+  <li><strong>.zip file</strong>: <a href="/tutorials/ggplot/Rcode_ggplot_tutorial.zip">R code and data sets</a></li>
+</ul>
+
+<figure class="third">
+	<a href="/images/lexdec2.png"><img src="/images/lexdec2.png" alt="image" /></a>
+	<a href="/images/vowelplot_chull.png"><img src="/images/vowelplot_chull.png" alt="image" /></a>
+	<a href="/images/vowelplot_faceted-axes.png"><img src="/images/vowelplot_faceted-axes.png" alt="image" /></a>
+	<figcaption></figcaption>
+</figure>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kodiweatherholtz'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+      
+        <a href="http://localhost:4000/blog/speech-perception-and-generalization/" class="btn" title="Speech perception and generalization across talkers and accents">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2015 Kodi Weatherholtz. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://rochester.academia.edu/KodiWeatherholtz" title="Kodi Weatherholtz on Academia.edu" target="_blank">
+	<span class="fa-stack fa-lg">
+	<i class="fa fa-circle fa-stack-2x"></i>
+	<i class="fa fa-font fa-stack-1x" style="color:black"></i></span></a>
+
+	<a href="https://twitter.com/kweather" title="Kodi Weatherholtz on Twitter" target="_blank">  	
+	<span class="fa-stack fa-lg">
+	<i class="fa fa-circle fa-stack-2x"></i>
+	<i class="fa fa-twitter fa-stack-1x fa-inverse" style="color:black"></i></span></a>
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	<a href="https://github.com/kweatherholtz" title="Kodi Weatherholtz on Github" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-github fa-2x"></i></span></a>
+
+	
+
+  
+
+	
+  
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed">
+  	<span class="fa-stack fa-lg">
+	<i class="fa fa-circle fa-stack-2x"></i>
+	<i class="fa fa-rss fa-stack-1x fa-inverse" style="color:black"></i></span></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

@@ -2,17 +2,19 @@
 
 title: Kodi Weatherholtz
 locale: en_US
-description: Describe your website here.
-#logo: site-logo.png
-logo: bio-photo.jpg
+description: 
+logo: profile-photo.jpg
 search: true
+comments: true
+share: true
 url: http://kweatherholtz.github.io
-#url: http://localhost:4000
+url: http://localhost:4000
 
 # Jekyll configuration
 
 permalink:   /:categories/:title/
 markdown:    kramdown
+mathjax:     true
 highlighter: pygments
 sass:
   sass_dir: _sass
@@ -36,12 +38,13 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Kodi Weatherholtz
-  avatar: bio-photo.jpg
+  avatar: profile-photo.jpg
   email: kweatherholtz@bcs.rochester.edu
-  disqus-shortname:
-  twitter: #username
+  disqus-shortname: kodiweatherholtz
+  academia: rochester.academia.edu/KodiWeatherholtz
+  twitter: kweather
   facebook: #username
-  github: #username
+  github: kweatherholtz
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: #username
   instagram: #username

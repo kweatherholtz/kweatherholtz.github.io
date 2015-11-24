@@ -1,19 +1,28 @@
 # Site navigation links
 
 - title: About
-  url: /about/
+  url: /
 
-- title: Articles
-  url: /articles/
+- title: CV
+  url: /cv/weatherholtz_cv.pdf
+
+- title: Contact
+  url: /#contact
+
+- title: Publications
+  url: /#publications
+
+- title: Research
+  url: /#research
+  
+- title: Teaching
+  url: /#teaching
 
 - title: Blog
-  url: /blog/
+  url: /#blog
 
-- title: Theme Setup
-  url: /theme-setup/
-
-- title: Made Mistakes
-  url: http://mademistakes.com
+#- title: Theme Setup
+#  url: /theme-setup/
 
 - title: Search
   url: /search/
