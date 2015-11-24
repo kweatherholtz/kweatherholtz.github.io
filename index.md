@@ -16,7 +16,7 @@ I am a postdoctoral associate in Brain and Cognitive Sciences at the University 
 * How are linguistic knowledge and social knowledge stored and accessed? 
 * How do inferences about the talker and social identity condition inferences about linguistic categories? 
 
-To address these questions, I combine psycholinguistic experimentation and advanced statistical modeling with tools, techniques and insights from sociolinguistics, social perception and cognition, perceptual and distributional learning theories, probability theory, Bayesian inference, computational modeling, phonetics, and syntax. [[**read more...**]](/Research/)
+To address these questions, I combine psycholinguistic experimentation and advanced statistical modeling with tools, techniques and insights from sociolinguistics, social perception and cognition, perceptual and distributional learning theories, probability theory, Bayesian inference, computational modeling, phonetics, and syntax. [[**read more...**]](/#research/)
 
 <a markdown="0" href="/cv/weatherholtz_cv.pdf" class="btn">Download CV</a>
 
