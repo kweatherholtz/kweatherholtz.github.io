@@ -3,7 +3,7 @@
   
     {
       "title"			: "Speech perception and generalization across talkers and accents",
-      "link"			: "http://localhost:4000/blog/speech-perception-and-generalization/",
+      "link"			: "http://kweatherholtz.github.io/blog/speech-perception-and-generalization/",
       "excerpt"		: "New manuscript on how listeners cope with variability in speech"
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "An introduction to ggplot",
-      "link"			: "http://localhost:4000/blog/intro-to-ggplot/",
+      "link"			: "http://kweatherholtz.github.io/blog/intro-to-ggplot/",
       "excerpt"		: "Tutorial on advanced data visualization in R"
     }
   
@@ -37,7 +37,7 @@
   
     ,{
       "title"			: "Kodi Weatherholtz",
-      "link"			: "http://localhost:4000/",
+      "link"			: "http://kweatherholtz.github.io/",
       "excerpt"		: ""
     }
   
