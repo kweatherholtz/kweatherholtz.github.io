@@ -54,7 +54,7 @@ owner:
   weibo: #userid
   google:
     plus: #username
-    analytics: kweatherholtz.github.io
+    analytics:
     verify:
     ad-client:
     ad-slot:
