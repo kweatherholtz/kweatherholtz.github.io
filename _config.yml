@@ -7,8 +7,8 @@ logo: profile-photo.jpg
 search: true
 comments: true
 share: true
-#url: http://kweatherholtz.github.io
-url: http://localhost:4000
+url: http://kweatherholtz.github.io
+#url: http://localhost:4000
 
 # Jekyll configuration
 
