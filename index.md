@@ -23,7 +23,7 @@ To address these questions, I combine psycholinguistic experimentation and advan
 
 ---
 
-#Contact Information <a class="anchor" name="contact"></a>
+# Contact Information <a class="anchor" name="contact"></a>
 
 Department of Brain and Cognitive Sciences <br>
 University of Rochester <br>
