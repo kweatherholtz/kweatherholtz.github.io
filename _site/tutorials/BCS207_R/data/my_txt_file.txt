@@ -1,0 +1,1 @@
+Subject	Trial	RT	AccuracyS01	1	710	correctS01	2	693	correctS01	3	695	correctS02	1	850	correctS02	2	835	incorrectS02	3	802	correct

@@ -21,11 +21,11 @@
   
 
   
-
-  
-
-  
-
+    ,{
+      "title"			: "Introduction to R:<br>Basic data manipulation and plotting",
+      "link"			: "http://localhost:4000/tutorials/BCS207_R/R_tutorial_part1.Rmd",
+      "excerpt"		: ""
+    }
   
 
   
@@ -40,6 +40,14 @@
       "link"			: "http://localhost:4000/",
       "excerpt"		: ""
     }
+  
+
+  
+
+  
+
+  
+
   
 
   
