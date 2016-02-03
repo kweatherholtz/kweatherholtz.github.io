@@ -15,7 +15,7 @@ url: http://kweatherholtz.github.io
 permalink:   /:categories/:title/
 markdown:    kramdown
 mathjax:     true
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
