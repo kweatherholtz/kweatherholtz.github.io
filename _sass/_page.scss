@@ -20,13 +20,13 @@
 /* feature image */
 
 .entry-feature-image {
-	margin: 10px 0 0;
+	margin: -200px 0 0 0;
 	width: 100%;
 	@include media($medium) {
-		margin-top: -75px; /* move up to be overlapped by site logo */
+		margin-top: -280px; /* move up to be overlapped by site logo */
 	}
 	@include media($large) {
-		margin-top: -345px; /* move up further to be overlapped by site logo */
+		margin-top: -350px; /* move up further to be overlapped by site logo */
 		
 	}
 }
@@ -63,7 +63,7 @@ span + .entry-title {
 	font-weight: 400;
 	line-height: 1;
 	letter-spacing: -3px;
-	margin-top: 2em;
+	margin-top: 1.2em;
 	a {
 		color: $black;
 		text-decoration: underline;
