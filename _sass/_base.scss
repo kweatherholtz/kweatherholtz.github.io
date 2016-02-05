@@ -29,7 +29,7 @@ body {
   font-family: $base-font;
   color: $text-color;
   background-color: $body-color;
-  border-top: 5px solid $black;
+  border-top: 1px solid white;
 }
 
 /*
@@ -95,7 +95,7 @@ a {
 		color: lighten($link-color, 20);
 	}
 	&:hover {
-		color: darken($link-color, 20);
+		color: red;
 	}
 	&:focus {
 		outline: thin dotted;

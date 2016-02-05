@@ -87,5 +87,3 @@ Rochester, NY 14627 <br>
 
 <a markdown="0" href="/blog/" class="btn">More posts...</a>
 <a markdown="0" href="/tags/" class="btn">Tag index</a>
-
-<BR>
