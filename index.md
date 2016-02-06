@@ -12,7 +12,7 @@ image:
 I am a postdoctoral associate in Brain and Cognitive Sciences at the University of Rochester. My research focuses on questions about language comprehension and production at the interface of psycholinguistics and sociolinguistics. Some of the big picture questions that I address in my research include:
 
 * How are linguistic representations shaped by the fact that language happens in a social context? 
-* How do people dynamically adjust their perception and production of linguistic categories in response to the environment (e.g., **perceptual learning**, **linguistic alignment**/accommodation)? 
+* How do people dynamically adjust their perception and production of linguistic categories in response to the environment (e.g., **perceptual learning**, **linguistic alignment**)? 
 * How are linguistic knowledge and social knowledge stored and accessed? 
 * How do inferences about the talker and social identity condition inferences about linguistic categories? 
 
@@ -57,9 +57,9 @@ Rochester, NY 14627 <br>
 * Weatherholtz, K. (2015). [***Perceptual learning of systemic cross-category vowel variation***](https://etd.ohiolink.edu/ap/10?0::NO:10:P10_ACCESSION_NUM:osu1429782580#abstract-files). PhD thesis. The Ohio State University.
 
 ## Select Presentations
-* **Weatherholtz, K.**, Campbell-Kibler, K, & Jaeger, T. F. (2014). Syntactic alignment and the mediating role of social perception and higher-order social cognition. Poster presented at the *International Workshop on Language Production*, Geneva, July 16-18th. [[**poster**]](/publications/Weatherholtz_etal_IWLP2014_poster.pdf)
+* Weatherholtz, K., Campbell-Kibler, K, & Jaeger, T. F. (2014). **Syntactic alignment and the mediating role of social perception and higher-order social cognition**. Poster presented at the *International Workshop on Language Production*, Geneva, July 16-18th. [[**poster**]](/publications/Weatherholtz_etal_IWLP2014_poster.pdf)
 
-* **Weatherholtz, K.**, Walker, A., Melvin, S., Royer, A., & Clopper, C. G. (2014). Effects of experience and expectations on adaptation to dialect variation in noise. Poster presented at the *27th Annual CUNY Conference on Human Sentence Processing*, Columbus, OH, March 14-15th. [[**poster**]](/publications/Weatherholtz_etal_CUNY2014_poster.pdf)
+* Weatherholtz, K., Walker, A., Melvin, S., Royer, A., & Clopper, C. G. (2014). **Effects of experience and expectations on adaptation to dialect variation in noise**. Poster presented at the *27th Annual CUNY Conference on Human Sentence Processing*, Columbus, OH, March 14-15th. [[**poster**]](/publications/Weatherholtz_etal_CUNY2014_poster.pdf)
 
 ---
 
