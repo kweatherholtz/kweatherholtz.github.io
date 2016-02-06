@@ -42,6 +42,7 @@ body {
 	@include font-size(16);
 }
 
+
 p {
 	@include font-size(17,yes,25);
 }
@@ -51,30 +52,31 @@ li {
 }
 
 /* headings */
-
 h1, h2, h3, h4, h5, h6 {
-	font-family: $heading-font;
-	text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  font-family: $heading-font;
+  margin-bottom: .5rem;
+  font-weight: bold;
+  line-height: 1.15;
+  color: $heading-color;
+  text-rendering: optimizeLegibility;
 }
 h1 {
-	@include font-size(30);
-	padding-top: 0px;
+  font-size: 2rem;
 }
 h2 {
-	@include font-size(26);
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 h3 {
-	@include font-size(23);
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
 }
-h4 {
-	@include font-size(20);
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
 }
-h5 {
-	@include font-size(18);
-}
-h6 {
-	@include font-size(16);
-}
+
+
 
 /* underlined text */
 
