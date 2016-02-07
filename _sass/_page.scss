@@ -97,7 +97,6 @@ span + .entry-title {
 
 .entry-wrapper {
 	@include outer-container;
-	max-width: 100%;
 	margin-top: 5px;
 	margin-bottom: $gutter;
 	padding-right: $gutter;
