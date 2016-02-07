@@ -40,12 +40,21 @@
 
 .entry-tags {
 	display: block;
+	
+	/* to get proper wrapping of tags */
+	width: 100%;
+  	word-break: break-word;
+	-webkit-hyphens: auto;
+   	-moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+	/* ------------------------------ */
 	margin-top: 2em;
 	text-transform: uppercase;
 	@include font-size(16);
 	font-weight: 600;
-	a {
-		color: $tag-color;
+	a.hover {
+		color: red;
 	}
 }
 
@@ -88,7 +97,8 @@ span + .entry-title {
 
 .entry-wrapper {
 	@include outer-container;
-	margin-top: -40px;
+	max-width: 100%;
+	margin-top: 5px;
 	margin-bottom: $gutter;
 	padding-right: $gutter;
 	padding-left: $gutter;

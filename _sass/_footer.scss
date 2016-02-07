@@ -4,8 +4,10 @@
 
 .footer-wrapper {
   @include clearfix;
-  margin: 3em auto;
+  margin: 1em auto;
   text-align: center;
+  position: absolute;
+  width: 100%;
   font-family: $alt-font;
   @include font-size(14);
   font-style: italic;
@@ -13,6 +15,9 @@
   color: $footnote-text-color;
   a {
     color: lighten($text-color,50);
+    &:hover{
+    	color: $footnote-text-color;
+    }
   }
 }
 
@@ -21,11 +26,11 @@
    ========================================================================== */
 
 .social-icons {
-  margin: 1em 0 2em;
+  margin: 1em 0 0em;
   a {
     padding: 4px 8px;
     &:hover {
-      color: $white;
+      color: $footnote-text-color;
     }
   }
 }
