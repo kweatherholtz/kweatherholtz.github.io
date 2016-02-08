@@ -65,7 +65,7 @@ basis for normalization might stem from statistical learning during
 early development about the relationship between a talker’s vocal tract
 size and corresponding vocal tract resonances.
 
-<figure>
+<figure class="numbered">
 	<a href="/images/vowel_space_male-vs-female.jpg"><img src="/images/vowel_space_male-vs-female.jpg" alt="image"></a>
 	<figcaption>Example of cross-talker vowel variability before (left)
 	and after (right) normalizing for differences in vocal-tract length

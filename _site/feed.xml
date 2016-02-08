@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2016-02-06T19:20:09-05:00</updated>
+<updated>2016-02-08T10:17:07-05:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Kodi Weatherholtz</name>
@@ -80,7 +80,7 @@ basis for normalization might stem from statistical learning during
 early development about the relationship between a talker’s vocal tract
 size and corresponding vocal tract resonances.&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure class=&quot;numbered&quot;&gt;
 	&lt;a href=&quot;/images/vowel_space_male-vs-female.jpg&quot;&gt;&lt;img src=&quot;/images/vowel_space_male-vs-female.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/a&gt;
 	&lt;figcaption&gt;Example of cross-talker vowel variability before (left)
 	and after (right) normalizing for differences in vocal-tract length
