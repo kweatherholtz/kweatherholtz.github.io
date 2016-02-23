@@ -9,7 +9,7 @@ image:
   creditlink: 
 ---
 
-I am a postdoctoral associate in Brain and Cognitive Sciences at the University of Rochester. My research focuses on questions about language comprehension and production at the interface of psycholinguistics and sociolinguistics. Some of the big picture questions that I address in my research include:
+I am a postdoctoral associate in Brain and Cognitive Sciences at the University of Rochester. My research focuses on questions about language processing and production at the interface of psycholinguistics and sociolinguistics. Some of the big picture questions that I address in my research include:
 
 * How are linguistic representations shaped by the fact that language happens in a social context? 
 * How do people dynamically adjust their perception and production of linguistic categories in response to the environment (e.g., **perceptual learning**, **linguistic alignment**)? 
