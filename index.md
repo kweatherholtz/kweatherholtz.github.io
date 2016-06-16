@@ -50,9 +50,11 @@ Rochester, NY 14627 <br>
 
 
 ## Work in progress
-* Weatherholtz, K., Seifeldin, M., Kleinschmidt, D. F., Kurumada, C., & Jaeger, T. F. (in prep.). **Speech perception as probabilistic inference under uncertainty based on social-indexical knowledge**. *Language and Linguistics Compass.* 
+* Jaeger, T. F., & Weatherholtz, K. (submitted). *What the heck is salience? How predictive language processing contributes to sociolinguistic perception.*
 
-* Weatherholtz, K. & Clopper, C. G. (in prep.). **Adaptation to systemic phonological variation: Evidence for generalization across talkers and vowel shift systems** <br>
+* Weatherholtz, K., Seifeldin, M., Kleinschmidt, D. F., Kurumada, C., & Jaeger, T. F. (in prep.). *Speech perception as probabilistic inference under uncertainty based on social-indexical knowledge*. 
+
+* Weatherholtz, K. & Clopper, C. G. (in prep.). *Adaptation to systemic phonological variation: Evidence for generalization across talkers and vowel shift systems* <br>
 
 
 ## PhD Thesis

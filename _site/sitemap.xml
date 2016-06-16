@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:4000/blog/speech-perception-and-generalization/</loc>
+    <loc>http://kweatherholtz.github.io/blog/speech-perception-and-generalization/</loc>
     <lastmod>2015-08-06T20:57:20-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/blog/intro-to-ggplot/</loc>
+    <loc>http://kweatherholtz.github.io/blog/intro-to-ggplot/</loc>
     <lastmod>2015-08-01T20:57:20-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/index-old.html</loc>
-    <lastmod>2016-02-27T23:08:47-05:00</lastmod>
+    <loc>http://kweatherholtz.github.io/index-old.html</loc>
+    <lastmod>2016-06-16T19:52:59-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/tags/</loc>
-    <lastmod>2016-02-27T23:08:47-05:00</lastmod>
+    <loc>http://kweatherholtz.github.io/tags/</loc>
+    <lastmod>2016-06-16T19:52:59-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/</loc>
-    <lastmod>2016-02-27T23:08:47-05:00</lastmod>
+    <loc>http://kweatherholtz.github.io/publications/</loc>
+    <lastmod>2016-06-16T19:52:59-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/publications/</loc>
-    <lastmod>2016-02-27T23:08:47-05:00</lastmod>
+    <loc>http://kweatherholtz.github.io/</loc>
+    <lastmod>2016-06-16T19:52:59-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/articles/</loc>
-    <lastmod>2016-02-27T23:08:47-05:00</lastmod>
+    <loc>http://kweatherholtz.github.io/blog/</loc>
+    <lastmod>2016-06-16T19:52:59-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/blog/</loc>
-    <lastmod>2016-02-27T23:08:47-05:00</lastmod>
+    <loc>http://kweatherholtz.github.io/articles/</loc>
+    <lastmod>2016-06-16T19:52:59-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/tutorials/BCS207_R/R_tutorial_part1.html</loc>
+    <loc>http://kweatherholtz.github.io/tutorials/BCS207_R/R_tutorial_part1.html</loc>
     <lastmod>2016-02-03T08:49:21-05:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/tutorials/ggplot/ggplot_ling_tutorial.html</loc>
+    <loc>http://kweatherholtz.github.io/tutorials/ggplot/ggplot_ling_tutorial.html</loc>
     <lastmod>2013-10-11T11:45:44-04:00</lastmod>
   </url>
 </urlset>
