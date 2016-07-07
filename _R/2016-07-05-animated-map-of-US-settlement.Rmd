@@ -362,7 +362,7 @@ With these two helper functions in hand, we can now get to the business of makin
 ```
 
 ## Final notes
-The Rmd file used to create this report can be downloaded [here](https://github.com/kweatherholtz/kweatherholtz.github.io/blob/master/_R/2016-07-05-animated-map-of-US-settlement.Rmd).
+The Rmd file used to create this report is available [here](https://github.com/kweatherholtz/kweatherholtz.github.io/blob/master/_R/2016-07-05-animated-map-of-US-settlement.Rmd).
 
 Note that if you run this code on a standard laptop, it will likely take several (5-15) minutes to make each map due to the amount of data that is prepped + rendered. The county map is particularly slow because the data frame contains more than 11 million rows and the gif contains nearly 400 frames (one frame per year from 1636--2000).
 
