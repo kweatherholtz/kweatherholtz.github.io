@@ -1,0 +1,545 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Animated maps of US settlement &#8211; Kodi Weatherholtz</title>
+<meta name="description" content="An Independence Day exercise in map making">
+<meta name="keywords" content="rstats, ggplot2, gganimate, maps">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Animated maps of US settlement">
+<meta name="twitter:description" content="An Independence Day exercise in map making">
+<meta name="twitter:site" content="@K_Weatherholtz">
+<meta name="twitter:creator" content="@K_Weatherholtz">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/profile-photo.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Animated maps of US settlement">
+<meta property="og:description" content="An Independence Day exercise in map making">
+<meta property="og:url" content="http://localhost:4000/blog/animated-map-of-US-settlement/">
+<meta property="og:site_name" content="Kodi Weatherholtz">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/blog/animated-map-of-US-settlement/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Kodi Weatherholtz Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/cv/weatherholtz_cv.pdf" >CV</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/#contact" >Contact</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/#publications" >Publications</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/#research" >Research</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/#teaching" >Teaching</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/blog" >Blog</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        
+          <h1 class="entry-post-title">Animated maps of US settlement</h1>
+        
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#rstats" title="Pages tagged rstats">rstats</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#ggplot2" title="Pages tagged ggplot2">ggplot2</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#gganimate" title="Pages tagged gganimate">gganimate</a>&nbsp;&bull;&nbsp;<a href="http://localhost:4000/tags/#maps" title="Pages tagged maps">maps</a></span>
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://localhost:4000/images/profile-photo.jpg" class="bio-photo" alt="Kodi Weatherholtz bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Kodi Weatherholtz</span></span>
+        <span class="entry-date date published"><time datetime="2016-07-05T00:00:00-04:00"><i class="fa fa-calendar-o"></i> July 05, 2016</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=rstats,ggplot2,gganimate,maps&amp;text=Animated%20maps%20of%20US%20settlement&amp;url=http://localhost:4000/blog/animated-map-of-US-settlement/&amp;via=K_Weatherholtz" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/animated-map-of-US-settlement/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/blog/animated-map-of-US-settlement/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>I wasn’t able to attend <a href="http://user2016.org/">useR! 2016</a> last week. But thanks to Microsoft’s live streaming service, I was able to record a number of sessions and watch them over the holiday weekend. I am a frequent user of many of Hadley Wickham’s R packages. So of course I tuned in for his keynote. Hadley presented the following map, using historical data from the <code>USAboundaries</code> package. His point wasn’t about map making, per se – but rather about “tidy” principles for dealing with complex data structures (such as shape files or statistical models). I’m onboard with the <a href="https://twitter.com/hashtag/tidyverse">#tidyverse</a>. But I was also inspired by the map itself. </p>
+
+<p><img src="/figs/2016-07-05-animated-map-of-US-settlement/hadley-example-1.png" alt="center" /></p>
+
+<p>In honor of US Independence Day, I decided to build on Hadley’s example to make an animated map of US settlement. I don’t have many occasions to make maps as part of my current academic work. So I thought it would be fun to spend some time on the 4th of July learning to wrangle shape files in R.</p>
+
+<h1 id="goals">Goals</h1>
+<p>My primary goal was to make two maps: </p>
+
+<ul>
+  <li>an animated map showing the settlement of US territories and the conversion of territories to states; and </li>
+  <li>an animated map showing the development of US counties.</li>
+</ul>
+
+<p>Secondly, I wanted to focus the maps on the continental US, while still showing data from <em>all</em> regions. Repositioning / reprojecting Alaska and Hawaii is certainly not news. But for a newcomer to geospatial data, it was a data-munging benchmark that I needed to surpass.</p>
+
+<h1 id="dataset">Dataset</h1>
+<p>The <code>USAboundaries</code> package contains state/territory-level data from September 3, 1783 to December 31, 2000. So the state-level map will be a bit truncated historically – skipping over the early settlement of US colonies, as well as the declaration of the 13 original colonies as free and independent states in 1776(!). But alas, we’ll still have a nice bit of data to play with.</p>
+
+<p>The county-level data in the <code>USAboundaries</code> package dates back about a century and a half further than the state-level data, all the way to December 30, 1636. So this dataset will provide a more extended view of US settlement history.</p>
+
+<h1 id="maps">Maps</h1>
+<p>Here are the final results of my holiday weekend map-making expedition. Annotated R code to reproduce these maps is below.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">create_timeline</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">boundary_df</span><span class="p">){</span>
+  <span class="c1"># determine how many year's worth of data will be plotted
+</span>  <span class="n">years</span> <span class="o">&lt;-</span> <span class="n">unique</span><span class="p">(</span><span class="n">boundary_df</span><span class="o">$</span><span class="n">year</span><span class="p">)</span>
+
+  <span class="c1"># create sequence that spans the width of the map (from min to max longitude),
+</span>  <span class="c1"># with evenly spaced intervals for years
+</span>  <span class="n">timeline_range</span> <span class="o">&lt;-</span> <span class="n">with</span><span class="p">(</span><span class="n">boundary_df</span><span class="p">,</span> 
+                         <span class="n">seq</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">long</span><span class="p">),</span>
+                             <span class="n">to</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">long</span><span class="p">),</span>
+                             <span class="n">length.out</span> <span class="o">=</span> <span class="n">length</span><span class="p">(</span><span class="n">years</span><span class="p">)))</span>
+  
+  <span class="c1"># determine latitude coordinate for positioning timeline.
+</span>  <span class="c1"># (max latitude * 1.2 places timeline just above map)
+</span>  <span class="n">timeline_y</span> <span class="o">&lt;-</span> <span class="n">max</span><span class="p">(</span><span class="n">boundary_df</span><span class="o">$</span><span class="n">lat</span><span class="p">)</span> <span class="o">*</span> <span class="m">1.2</span>
+  
+  <span class="c1"># collect timeline data into a df
+</span>  <span class="n">timeline</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">timeline_range</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">timeline_y</span><span class="p">,</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="n">years</span>
+  <span class="p">)</span>
+  
+  <span class="k">return</span><span class="p">(</span><span class="n">timeline</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+
+<p>The state-level map shows the United States on January 1st, every year from 1784 to 2000. (I grew up in Oklahoma – but I’d forgotten that there was a short period just before Oklahoma became a state in 1907 during which part of the region was an organized incorporated US territory and part was unorganized. This animated map reminded me of that fact).</p>
+
+<p><img src="/figs/2016-07-05-animated-map-of-US-settlement/make-state-map-.gif" alt="make-state-map" /></p>
+
+<p>The county-level map shows the United States on January 1st, every year from 1637 to 2000. One thing I like about this animation is that it highlights the degree of geographic separation during the early years of settlement.</p>
+
+<p><img src="/figs/2016-07-05-animated-map-of-US-settlement/make-county-map-.gif" alt="make-county-map" /></p>
+
+<h1 id="r-code">R code</h1>
+
+<h2 id="data-wrangling-process">Data wrangling process</h2>
+
+<p>The heavy lifting is done by the <code>get_boundaries()</code> function defined below. This function uses the <code>USAboundaries::us_boundaries()</code> function to get (state- or county-level) shape files for a specified date, and then performs some additional processing to convert the shape file into a convenient format for plotting. The additional processing involves the following:</p>
+
+<ul>
+  <li>extract metadata associated with each region (e.g., whether the region is an unorganized territory, state, etc.)</li>
+  <li>project the coordinate system to Albers equal area</li>
+  <li>reposition Alaska and Hawaii – I learned a lot about this from <a href="https://github.com/hrbrmstr/rd3albers/">a helpful post by Bob Rudis</a>, AKA <a href="https://twitter.com/hrbrmstr">@hrbrmstr</a>. </li>
+  <li>combine metadata with (repositioned) shape data</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">library</span><span class="p">(</span><span class="n">USAboundaries</span><span class="p">)</span>  <span class="c1"># contains data (shape files)
+</span><span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>          <span class="c1"># for wrangling
+</span><span class="n">library</span><span class="p">(</span><span class="n">lubridate</span><span class="p">)</span>      <span class="c1"># for wrangling dates
+</span><span class="n">library</span><span class="p">(</span><span class="n">rgdal</span><span class="p">)</span>          <span class="c1"># for wrangling shape files / map data
+</span><span class="n">library</span><span class="p">(</span><span class="n">maptools</span><span class="p">)</span>       <span class="c1"># for wrangling shape files / map data
+</span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>        <span class="c1"># for plotting
+</span><span class="n">library</span><span class="p">(</span><span class="n">gganimate</span><span class="p">)</span>      <span class="c1"># for gif animation
+</span><span class="n">library</span><span class="p">(</span><span class="n">viridis</span><span class="p">)</span>        <span class="c1"># for lovely color palettes
+</span>
+<span class="c1">## ------------------------------------------------------------------------ ##
+</span><span class="n">get_boundaries</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s2">"state"</span><span class="p">){</span>
+  <span class="c1"># Get shapefile for US states on specified date
+</span>  <span class="n">sp</span> <span class="o">&lt;-</span> <span class="n">us_boundaries</span><span class="p">(</span><span class="n">as.Date</span><span class="p">(</span><span class="n">date</span><span class="p">),</span> <span class="n">type</span> <span class="o">=</span> <span class="n">type</span><span class="p">)</span>
+  
+  <span class="c1"># Extract metadata. Includes info about the territory type for
+</span>  <span class="c1"># each region (i.e., state, unorganized territory, etc.)
+</span>  <span class="n">metadata</span> <span class="o">&lt;-</span> <span class="n">sp</span> <span class="o">%&gt;%</span>
+    <span class="n">as.data.frame</span><span class="p">()</span> <span class="o">%&gt;%</span>
+    <span class="n">mutate</span><span class="p">(</span><span class="n">id</span> <span class="o">=</span> <span class="n">as.character</span><span class="p">(</span><span class="n">id_num</span> <span class="m">-1</span><span class="p">))</span><span class="c1"># %&gt;%
+</span>    <span class="c1"># select(id, name, terr_type)
+</span>  
+  <span class="c1"># ----------------------------------------------
+</span>  <span class="c1"># Convert coordinate system to Albers equal area, 
+</span>  <span class="c1"># and then reposition Alaska and Hawaii.
+</span>  <span class="c1"># 
+</span>  <span class="c1"># thanks to Bob Rudis (hrbrmstr):
+</span>  <span class="c1"># https://github.com/hrbrmstr/rd3albers
+</span>  <span class="n">sp_t</span> <span class="o">&lt;-</span> <span class="n">spTransform</span><span class="p">(</span><span class="n">sp</span><span class="p">,</span> <span class="n">CRS</span><span class="p">(</span><span class="s2">"+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs"</span><span class="p">))</span>
+  <span class="n">rownames</span><span class="p">(</span><span class="n">sp_t</span><span class="o">@</span><span class="n">data</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">as.character</span><span class="p">(</span><span class="n">as.numeric</span><span class="p">(</span><span class="n">rownames</span><span class="p">(</span><span class="n">sp_t</span><span class="o">@</span><span class="n">data</span><span class="p">))</span> <span class="o">-</span> <span class="m">1</span><span class="p">)</span>
+  
+  <span class="c1"># extract, then rotate, shrink &amp; move alaska (and reset projection)
+</span>  <span class="n">alaska</span> <span class="o">&lt;-</span>  
+    <span class="k">if</span><span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="s2">"state"</span><span class="p">){</span>
+      <span class="n">sp_t</span><span class="p">[</span><span class="n">grep</span><span class="p">(</span><span class="s2">"Alaska"</span><span class="p">,</span> <span class="n">sp_t</span><span class="o">$</span><span class="n">full_name</span><span class="p">,</span> <span class="n">fixed</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">),]</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="s2">"county"</span><span class="p">){</span>
+      <span class="n">sp_t</span><span class="p">[</span><span class="n">grep</span><span class="p">(</span><span class="s2">"Alaska"</span><span class="p">,</span> <span class="n">sp_t</span><span class="o">$</span><span class="n">state_terr</span><span class="p">,</span> <span class="n">fixed</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">),]</span>
+    <span class="p">}</span>
+
+  <span class="n">alaska</span> <span class="o">&lt;-</span> <span class="n">elide</span><span class="p">(</span><span class="n">alaska</span><span class="p">,</span> <span class="n">rotate</span><span class="o">=</span><span class="m">-50</span><span class="p">)</span>
+  <span class="n">alaska</span> <span class="o">&lt;-</span> <span class="n">elide</span><span class="p">(</span><span class="n">alaska</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">apply</span><span class="p">(</span><span class="n">bbox</span><span class="p">(</span><span class="n">alaska</span><span class="p">),</span> <span class="m">1</span><span class="p">,</span> <span class="n">diff</span><span class="p">))</span> <span class="o">/</span> <span class="m">2.3</span><span class="p">)</span>
+  <span class="n">alaska</span> <span class="o">&lt;-</span> <span class="n">elide</span><span class="p">(</span><span class="n">alaska</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="n">c</span><span class="p">(</span><span class="m">-2100000</span><span class="p">,</span> <span class="m">-2500000</span><span class="p">))</span>
+  <span class="n">proj4string</span><span class="p">(</span><span class="n">alaska</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">proj4string</span><span class="p">(</span><span class="n">sp_t</span><span class="p">)</span>
+  
+  <span class="c1"># extract, then rotate &amp; shift hawaii
+</span>  <span class="n">hawaii</span> <span class="o">&lt;-</span>  
+    <span class="k">if</span><span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="s2">"state"</span><span class="p">){</span>
+      <span class="n">sp_t</span><span class="p">[</span><span class="n">grep</span><span class="p">(</span><span class="s2">"Hawaii"</span><span class="p">,</span> <span class="n">sp_t</span><span class="o">$</span><span class="n">full_name</span><span class="p">,</span> <span class="n">fixed</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">),]</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="s2">"county"</span><span class="p">){</span>
+      <span class="n">sp_t</span><span class="p">[</span><span class="n">grep</span><span class="p">(</span><span class="s2">"Hawaii"</span><span class="p">,</span> <span class="n">sp_t</span><span class="o">$</span><span class="n">state_terr</span><span class="p">,</span> <span class="n">fixed</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">),]</span>
+    <span class="p">}</span>
+
+  <span class="n">hawaii</span> <span class="o">&lt;-</span> <span class="n">elide</span><span class="p">(</span><span class="n">hawaii</span><span class="p">,</span> <span class="n">rotate</span><span class="o">=</span><span class="m">-35</span><span class="p">)</span>
+  <span class="n">hawaii</span> <span class="o">&lt;-</span> <span class="n">elide</span><span class="p">(</span><span class="n">hawaii</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="n">c</span><span class="p">(</span><span class="m">5400000</span><span class="p">,</span> <span class="m">-1400000</span><span class="p">))</span>
+  <span class="n">proj4string</span><span class="p">(</span><span class="n">hawaii</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">proj4string</span><span class="p">(</span><span class="n">sp_t</span><span class="p">)</span>
+  
+  <span class="c1"># remove old states and put new ones back in
+</span>  <span class="n">sp_t</span> <span class="o">&lt;-</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="s2">"state"</span><span class="p">){</span>
+      <span class="n">sp_t</span><span class="p">[</span><span class="o">!</span><span class="n">grepl</span><span class="p">(</span><span class="s2">"Alaska|Hawaii"</span><span class="p">,</span> <span class="n">sp_t</span><span class="o">$</span><span class="n">full_name</span><span class="p">),]</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="s2">"county"</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">sp_t</span><span class="p">[</span><span class="o">!</span><span class="n">grepl</span><span class="p">(</span><span class="s2">"Alaska|Hawaii"</span><span class="p">,</span> <span class="n">sp_t</span><span class="o">$</span><span class="n">state_terr</span><span class="p">),]</span>
+    <span class="p">}</span>
+
+  <span class="n">sp_t</span> <span class="o">&lt;-</span> <span class="n">rbind</span><span class="p">(</span><span class="n">sp_t</span><span class="p">,</span> <span class="n">alaska</span><span class="p">,</span> <span class="n">hawaii</span><span class="p">,</span> <span class="n">makeUniqueIDs</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span>
+  <span class="c1"># ----------------------------------------------  
+</span>  
+  <span class="c1"># get borders for each region
+</span>  <span class="n">borders</span> <span class="o">&lt;-</span> <span class="n">sp_t</span> <span class="o">%&gt;%</span>
+    <span class="n">fortify</span><span class="p">()</span> <span class="o">%&gt;%</span>
+    <span class="n">as.data.frame</span><span class="p">()</span> <span class="o">%&gt;%</span>
+    <span class="n">mutate</span><span class="p">(</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span><span class="p">(</span><span class="n">date</span><span class="p">))</span> <span class="o">%&gt;%</span>
+    <span class="n">left_join</span><span class="p">(</span><span class="n">metadata</span><span class="p">,</span> <span class="n">by</span> <span class="o">=</span> <span class="s2">"id"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+
+<p>The <code>create_timeline()</code> function creates the data needed to draw an animated timeline on the graphs. The input to this function is a dataframe containing lat/long info about the map to be plotted (e.g., the dataframe created by a call to <code>get_boundaries()</code>). The basic idea is to divide the x-axis range of the map (i.e., min and max longitude) into evenly spaced intervals, one for each year (since we’re animating by year). The resulting sequence provides the tick locations for the moving timeline tick point. And then we determine the vertical placement of the timeline by getting the max latitude of the map and adding a bit of padding.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">create_timeline</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">boundary_df</span><span class="p">){</span>
+  <span class="c1"># determine how many year's worth of data will be plotted
+</span>  <span class="n">years</span> <span class="o">&lt;-</span> <span class="n">unique</span><span class="p">(</span><span class="n">boundary_df</span><span class="o">$</span><span class="n">year</span><span class="p">)</span>
+
+  <span class="c1"># create sequence that spans the width of the map (from min to max longitude),
+</span>  <span class="c1"># with evenly spaced intervals for years
+</span>  <span class="n">timeline_range</span> <span class="o">&lt;-</span> <span class="n">with</span><span class="p">(</span><span class="n">boundary_df</span><span class="p">,</span> 
+                         <span class="n">seq</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">long</span><span class="p">),</span>
+                             <span class="n">to</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">long</span><span class="p">),</span>
+                             <span class="n">length.out</span> <span class="o">=</span> <span class="n">length</span><span class="p">(</span><span class="n">years</span><span class="p">)))</span>
+  
+  <span class="c1"># determine latitude coordinate for positioning timeline.
+</span>  <span class="c1"># (max latitude * 1.2 places timeline just above map)
+</span>  <span class="n">timeline_y</span> <span class="o">&lt;-</span> <span class="n">max</span><span class="p">(</span><span class="n">boundary_df</span><span class="o">$</span><span class="n">lat</span><span class="p">)</span> <span class="o">*</span> <span class="m">1.2</span>
+  
+  <span class="c1"># collect timeline data into a df
+</span>  <span class="n">timeline</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">timeline_range</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">timeline_y</span><span class="p">,</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="n">years</span>
+  <span class="p">)</span>
+  
+  <span class="k">return</span><span class="p">(</span><span class="n">timeline</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+
+<p>With these two helper functions in hand, we can now get to the business of making the maps. </p>
+
+<h3 id="state-level-map">State-level map</h3>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># specify dates for which historic map data is to be gathered
+</span><span class="n">state_dates</span> <span class="o">&lt;-</span> <span class="n">seq</span><span class="p">(</span><span class="n">as.Date</span><span class="p">(</span><span class="s2">"1784-01-01"</span><span class="p">),</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"2000-01-01"</span><span class="p">),</span> <span class="n">by</span> <span class="o">=</span> <span class="s2">"year"</span><span class="p">)</span>
+
+<span class="c1"># for faster rendering, try plotting a reduced date range
+# state_dates &lt;- seq(as.Date("1784-01-01"), as.Date("1789-01-01"), by = "year")
+</span>
+<span class="c1"># get state-level data for every date, bind all data into one df,
+# and set factor levels for territory type
+</span><span class="n">states</span> <span class="o">&lt;-</span> <span class="n">lapply</span><span class="p">(</span><span class="n">state_dates</span><span class="p">,</span> 
+                 <span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="n">get_boundaries</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s2">"state"</span><span class="p">))</span> <span class="o">%&gt;%</span>
+  <span class="n">do.call</span><span class="p">(</span><span class="n">rbind</span><span class="p">,</span> <span class="err">.</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="n">mutate</span><span class="p">(</span>
+    <span class="n">terr_type</span> <span class="o">=</span> <span class="n">factor</span><span class="p">(</span><span class="n">terr_type</span><span class="p">,</span>
+                       <span class="n">levels</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"State"</span><span class="p">,</span> 
+                                  <span class="s2">"District of Columbia"</span><span class="p">,</span> 
+                                  <span class="s2">"Territory"</span><span class="p">,</span>
+                                  <span class="s2">"Unorganized Territory"</span><span class="p">,</span> 
+                                  <span class="s2">"Other"</span><span class="p">)))</span>
+
+
+<span class="c1"># create timeline for state data
+</span><span class="n">state_timeline</span> <span class="o">&lt;-</span> <span class="n">create_timeline</span><span class="p">(</span><span class="n">states</span><span class="p">)</span>
+
+
+<span class="c1"># plot the map
+</span><span class="n">p_state</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">()</span> <span class="o">+</span>
+  <span class="c1"># Add territory polygons
+</span>  <span class="n">geom_polygon</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">long</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">lat</span><span class="p">,</span> <span class="n">group</span> <span class="o">=</span> <span class="n">group</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">terr_type</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">year</span><span class="p">),</span>
+               <span class="n">data</span> <span class="o">=</span> <span class="n">states</span><span class="p">,</span>
+               <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span> <span class="o">+</span>
+
+  <span class="c1"># Add timeline
+</span>  <span class="n">geom_segment</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">xend</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">),</span>
+                   <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span> <span class="n">yend</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span>
+                   <span class="n">frame</span> <span class="o">=</span> <span class="n">year</span><span class="p">),</span>
+               <span class="n">data</span> <span class="o">=</span> <span class="n">state_timeline</span><span class="p">,</span>
+               <span class="n">colour</span> <span class="o">=</span> <span class="s2">"grey50"</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_point</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">year</span><span class="p">),</span>
+             <span class="n">data</span> <span class="o">=</span> <span class="n">state_timeline</span><span class="p">,</span>
+             <span class="n">colour</span> <span class="o">=</span> <span class="s2">"grey50"</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span> <span class="o">+</span>
+  
+  <span class="c1"># styling  
+</span>  <span class="n">coord_equal</span><span class="p">()</span> <span class="o">+</span>
+  <span class="n">scale_fill_viridis</span><span class="p">(</span><span class="n">discrete</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">"Map of US territories\nJanuary 1,"</span><span class="p">,</span>
+       <span class="n">fill</span> <span class="o">=</span> <span class="s2">""</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">theme_minimal</span><span class="p">()</span> <span class="o">+</span>
+  <span class="n">theme</span><span class="p">(</span><span class="n">panel.grid</span> <span class="o">=</span> <span class="n">element_blank</span><span class="p">(),</span>
+        <span class="n">axis.text</span> <span class="o">=</span> <span class="n">element_blank</span><span class="p">(),</span>
+        <span class="n">axis.title</span> <span class="o">=</span> <span class="n">element_blank</span><span class="p">())</span>
+
+<span class="n">gg_animate</span><span class="p">(</span><span class="n">p_state</span><span class="p">,</span> <span class="n">interval</span> <span class="o">=</span> <span class="m">0.1</span><span class="p">)</span></code></pre></div>
+
+<h3 id="county-level-map">County-level map</h3>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># specify dates for which historic map data is to be gathered
+</span><span class="n">county_dates</span> <span class="o">&lt;-</span> <span class="n">seq</span><span class="p">(</span><span class="n">as.Date</span><span class="p">(</span><span class="s2">"1637-01-01"</span><span class="p">),</span> <span class="n">as.Date</span><span class="p">(</span><span class="s2">"2000-01-01"</span><span class="p">),</span> <span class="n">by</span> <span class="o">=</span> <span class="s2">"year"</span><span class="p">)</span>
+
+<span class="c1"># get county data for specified date range
+</span><span class="n">counties</span> <span class="o">&lt;-</span> <span class="n">lapply</span><span class="p">(</span><span class="n">county_dates</span><span class="p">,</span> 
+                   <span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="n">get_boundaries</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s2">"county"</span><span class="p">))</span> <span class="o">%&gt;%</span>
+  <span class="n">do.call</span><span class="p">(</span><span class="n">rbind</span><span class="p">,</span> <span class="err">.</span><span class="p">)</span>
+
+
+<span class="c1"># create timeline
+</span><span class="n">county_timeline</span> <span class="o">&lt;-</span> <span class="n">create_timeline</span><span class="p">(</span><span class="n">counties</span><span class="p">)</span>
+
+
+<span class="c1"># make the plot
+</span><span class="n">p_counties</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">()</span> <span class="o">+</span>
+  <span class="c1"># Add county polygons
+</span>  <span class="n">geom_polygon</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">long</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">lat</span><span class="p">,</span> <span class="n">group</span> <span class="o">=</span> <span class="n">group</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">year</span><span class="p">),</span>
+               <span class="n">data</span> <span class="o">=</span> <span class="n">counties</span><span class="p">,</span>
+               <span class="n">colour</span> <span class="o">=</span> <span class="s2">"red"</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="s2">"grey90"</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">.1</span><span class="p">)</span> <span class="o">+</span>
+
+  <span class="c1"># Add timeline
+</span>  <span class="n">geom_segment</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">xend</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">),</span>
+                   <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span> <span class="n">yend</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span>
+                   <span class="n">frame</span> <span class="o">=</span> <span class="n">year</span><span class="p">),</span>
+               <span class="n">data</span> <span class="o">=</span> <span class="n">county_timeline</span><span class="p">,</span>
+               <span class="n">colour</span> <span class="o">=</span> <span class="s2">"grey50"</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_point</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">year</span><span class="p">),</span>
+             <span class="n">data</span> <span class="o">=</span> <span class="n">county_timeline</span><span class="p">,</span>
+             <span class="n">colour</span> <span class="o">=</span> <span class="s2">"grey50"</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span> <span class="o">+</span>
+  
+  <span class="c1"># Styling  
+</span>  <span class="n">coord_equal</span><span class="p">()</span> <span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">"Map of US counties\nJanuary 1,"</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">theme_minimal</span><span class="p">()</span> <span class="o">+</span>
+  <span class="n">theme</span><span class="p">(</span><span class="n">panel.grid</span> <span class="o">=</span> <span class="n">element_blank</span><span class="p">(),</span>
+        <span class="n">axis.text</span> <span class="o">=</span> <span class="n">element_blank</span><span class="p">(),</span>
+        <span class="n">axis.title</span> <span class="o">=</span> <span class="n">element_blank</span><span class="p">(),</span>
+        <span class="n">plot.title</span> <span class="o">=</span> <span class="n">element_text</span><span class="p">(</span><span class="n">colour</span> <span class="o">=</span> <span class="s2">"white"</span><span class="p">),</span>
+        <span class="n">legend.text</span> <span class="o">=</span> <span class="n">element_text</span><span class="p">(</span><span class="n">colour</span> <span class="o">=</span> <span class="s2">"white"</span><span class="p">),</span>
+        <span class="n">plot.background</span> <span class="o">=</span> <span class="n">element_rect</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="s2">"black"</span><span class="p">))</span>
+
+<span class="c1"># animate the plot
+</span><span class="n">gg_animate</span><span class="p">(</span><span class="n">p_counties</span><span class="p">,</span> <span class="n">interval</span> <span class="o">=</span> <span class="m">0.1</span><span class="p">)</span></code></pre></div>
+
+<h2 id="final-notes">Final notes</h2>
+<p>The Rmd file used to create this report can be downloaded <a href="https://github.com/kweatherholtz/kweatherholtz.github.io/_R/2016-07-05-animated-map-of-US-settlement.Rmd">here</a>.</p>
+
+<p>Note that if you run this code on a standard laptop, it will likely take several (5-15) minutes to make each map due to the amount of data that is prepped + rendered. The county map is particularly slow because the data frame contains more than 11 million rows and the gif contains nearly 400 frames (one frame per year from 1636–2000).</p>
+
+<p>My approach here (and in general) was <strong>desired output first, optimize later</strong>, especially since I’m new to map making. If you just want to play around with the code and see immediate results, I would start by reducing the date range to a handful of years, which will dramatically speed up the data prep + rendering process.</p>
+
+<p>Also, I just learned about the new <code>rmapshaper</code> package, which might be one way to improve rendering speed at scale. This package performs multi-polygon simplification by removing overlapping boundaries between adjacent polygons. Maybe I’ll try that out in a later post.</p>
+
+<p>Comments are always welcome!</p>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kodiweatherholtz'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/blog/speech-perception-and-generalization/" class="btn" title="Speech perception and generalization across talkers and accents">Previous</a>
+      
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2016 Kodi Weatherholtz. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://rochester.academia.edu/KodiWeatherholtz" title="Kodi Weatherholtz on Academia.edu" target="_blank">
+	<span class="fa-stack fa-lg">
+	<i class="fa fa-circle fa-stack-2x"></i>
+	<i class="fa fa-font fa-stack-1x" style="color:black"></i></span></a>
+
+	<a href="https://twitter.com/K_Weatherholtz" title="Kodi Weatherholtz on Twitter" target="_blank">  	
+	<span class="fa-stack fa-lg">
+	<i class="fa fa-circle fa-stack-2x"></i>
+	<i class="fa fa-twitter fa-stack-1x fa-inverse" style="color:black"></i></span></a>
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	<a href="https://github.com/kweatherholtz" title="Kodi Weatherholtz on Github" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-github fa-2x"></i></span></a>
+
+	
+
+  
+
+	
+  
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed">
+  	<span class="fa-stack fa-lg">
+	<i class="fa fa-circle fa-stack-2x"></i>
+	<i class="fa fa-rss fa-stack-1x fa-inverse" style="color:black"></i></span></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
