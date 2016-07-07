@@ -178,7 +178,8 @@ With these two helper functions in hand, we can now get to the business of makin
 
 {% highlight r %}
 # specify dates for which historic map data is to be gathered
-state_dates <- seq(as.Date("1784-01-01"), as.Date("2000-01-01"), by = "year")
+#state_dates <- seq(as.Date("1784-01-01"), as.Date("2000-01-01"), by = "year")
+state_dates <- seq(as.Date("1784-01-01"), as.Date("1786-01-01"), by = "year")
 
 # for faster rendering, try plotting a reduced date range
 # state_dates <- seq(as.Date("1784-01-01"), as.Date("1789-01-01"), by = "year")
@@ -235,7 +236,8 @@ gg_animate(p_state, interval = 0.1)
 
 {% highlight r %}
 # specify dates for which historic map data is to be gathered
-county_dates <- seq(as.Date("1637-01-01"), as.Date("2000-01-01"), by = "year")
+# county_dates <- seq(as.Date("1637-01-01"), as.Date("2000-01-01"), by = "year")
+county_dates <- seq(as.Date("1637-01-01"), as.Date("1639-01-01"), by = "year")
 
 # get county data for specified date range
 counties <- lapply(county_dates, 

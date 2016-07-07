@@ -14,27 +14,27 @@
   </url>
   <url>
     <loc>http://localhost:4000/index-old.html</loc>
-    <lastmod>2016-07-06T22:44:45-04:00</lastmod>
+    <lastmod>2016-07-07T14:26:49-04:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:4000/tags/</loc>
-    <lastmod>2016-07-06T22:44:45-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:4000/publications/</loc>
-    <lastmod>2016-07-06T22:44:45-04:00</lastmod>
+    <lastmod>2016-07-07T14:26:49-04:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:4000/</loc>
-    <lastmod>2016-07-06T22:44:45-04:00</lastmod>
+    <lastmod>2016-07-07T14:26:49-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:4000/blog/</loc>
-    <lastmod>2016-07-06T22:44:45-04:00</lastmod>
+    <loc>http://localhost:4000/publications/</loc>
+    <lastmod>2016-07-07T14:26:49-04:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:4000/articles/</loc>
-    <lastmod>2016-07-06T22:44:45-04:00</lastmod>
+    <lastmod>2016-07-07T14:26:49-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:4000/blog/</loc>
+    <lastmod>2016-07-07T14:26:49-04:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:4000/tutorials/BCS207_R/R_tutorial_part1.html</loc>

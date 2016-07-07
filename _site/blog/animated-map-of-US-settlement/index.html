@@ -186,31 +186,6 @@
 <h1 id="maps">Maps</h1>
 <p>Here are the final results of my holiday weekend map-making expedition. Annotated R code to reproduce these maps is below.</p>
 
-<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">create_timeline</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">boundary_df</span><span class="p">){</span>
-  <span class="c1"># determine how many year's worth of data will be plotted
-</span>  <span class="n">years</span> <span class="o">&lt;-</span> <span class="n">unique</span><span class="p">(</span><span class="n">boundary_df</span><span class="o">$</span><span class="n">year</span><span class="p">)</span>
-
-  <span class="c1"># create sequence that spans the width of the map (from min to max longitude),
-</span>  <span class="c1"># with evenly spaced intervals for years
-</span>  <span class="n">timeline_range</span> <span class="o">&lt;-</span> <span class="n">with</span><span class="p">(</span><span class="n">boundary_df</span><span class="p">,</span> 
-                         <span class="n">seq</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">long</span><span class="p">),</span>
-                             <span class="n">to</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">long</span><span class="p">),</span>
-                             <span class="n">length.out</span> <span class="o">=</span> <span class="n">length</span><span class="p">(</span><span class="n">years</span><span class="p">)))</span>
-  
-  <span class="c1"># determine latitude coordinate for positioning timeline.
-</span>  <span class="c1"># (max latitude * 1.2 places timeline just above map)
-</span>  <span class="n">timeline_y</span> <span class="o">&lt;-</span> <span class="n">max</span><span class="p">(</span><span class="n">boundary_df</span><span class="o">$</span><span class="n">lat</span><span class="p">)</span> <span class="o">*</span> <span class="m">1.2</span>
-  
-  <span class="c1"># collect timeline data into a df
-</span>  <span class="n">timeline</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">timeline_range</span><span class="p">,</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">timeline_y</span><span class="p">,</span>
-    <span class="n">year</span> <span class="o">=</span> <span class="n">years</span>
-  <span class="p">)</span>
-  
-  <span class="k">return</span><span class="p">(</span><span class="n">timeline</span><span class="p">)</span>
-<span class="p">}</span></code></pre></div>
-
 <p>The state-level map shows the United States on January 1st, every year from 1784 to 2000. (I grew up in Oklahoma – but I’d forgotten that there was a short period just before Oklahoma became a state in 1907 during which part of the region was an organized incorporated US territory and part was unorganized. This animated map reminded me of that fact).</p>
 
 <p><img src="/figs/2016-07-05-animated-map-of-US-settlement/make-state-map-.gif" alt="make-state-map" /></p>
@@ -437,7 +412,7 @@
 </span><span class="n">gg_animate</span><span class="p">(</span><span class="n">p_counties</span><span class="p">,</span> <span class="n">interval</span> <span class="o">=</span> <span class="m">0.1</span><span class="p">)</span></code></pre></div>
 
 <h2 id="final-notes">Final notes</h2>
-<p>The Rmd file used to create this report can be downloaded <a href="https://github.com/kweatherholtz/kweatherholtz.github.io/_R/2016-07-05-animated-map-of-US-settlement.Rmd">here</a>.</p>
+<p>The Rmd file used to create this report is available <a href="https://github.com/kweatherholtz/kweatherholtz.github.io/blob/master/_R/2016-07-05-animated-map-of-US-settlement.Rmd">here</a>.</p>
 
 <p>Note that if you run this code on a standard laptop, it will likely take several (5-15) minutes to make each map due to the amount of data that is prepped + rendered. The county map is particularly slow because the data frame contains more than 11 million rows and the gif contains nearly 400 frames (one frame per year from 1636–2000).</p>
 
