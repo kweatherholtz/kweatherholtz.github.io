@@ -42,32 +42,33 @@ Rochester, NY 14627 <br>
 
 # Publications  <a class="anchor" name="publications"></a>
 
-* Weatherholtz, K. & Jaeger, T. F. (to appear). [**Speech perception and generalization across talkers and accents**](https://www.academia.edu/14122668/Speech_perception_and_generalization_across_speakers_and_accents/). *Oxford Research Encyclopedia of Linguistics*.
+## Peer-reviewed articles
 
+Weatherholtz, K. & Jaeger, T. F. (to appear). [**Speech perception and generalization across talkers and accents**](https://www.academia.edu/14122668/Speech_perception_and_generalization_across_speakers_and_accents/). *Oxford Research Encyclopedia of Linguistics*.
 
-* Weatherholtz, K., Campbell-Kibler, K., & Jaeger, T. F. (2014). [**Socially-mediated syntactic alignment**](http://dx.doi.org/10.1017/S0954394514000155). *Language Variation and Change*, *26*(3), 387-420. doi: 10.1017/S0954394514000155.
+Weatherholtz, K., Campbell-Kibler, K., & Jaeger, T. F. (2014). [**Socially-mediated syntactic alignment**](http://dx.doi.org/10.1017/S0954394514000155). *Language Variation and Change*, *26*(3), 387-420. doi: 10.1017/S0954394514000155.
 
 
 
 ## Work in progress
-* Jaeger, T. F., & Weatherholtz, K. (under review). *What the heck is salience? How predictive language processing contributes to sociolinguistic perception.*
+Jaeger, T. F., & Weatherholtz, K. (under review). *What the heck is salience? How predictive language processing contributes to sociolinguistic perception.*
 
-* Weatherholtz, K., Seifeldin, M., Kleinschmidt, D. F., Kurumada, C., & Jaeger, T. F. (under review). *Speech perception as probabilistic inference under uncertainty based on social-indexical knowledge*. 
+Weatherholtz, K., Seifeldin, M., Kleinschmidt, D. F., Kurumada, C., & Jaeger, T. F. (under review). *Speech perception as probabilistic inference under uncertainty based on social-indexical knowledge*. 
 
-* Weatherholtz, K. & Clopper, C. G. (in prep.). *Adaptation to systemic phonological variation: Evidence for generalization across talkers and vowel shift systems* <br>
+Weatherholtz, K. & Clopper, C. G. (in prep.). *Adaptation to systemic phonological variation: Evidence for generalization across talkers and vowel shift systems* <br>
 
 
 ## PhD Thesis
-* Weatherholtz, K. (2015). [***Perceptual learning of systemic cross-category vowel variation***](https://etd.ohiolink.edu/ap/10?0::NO:10:P10_ACCESSION_NUM:osu1429782580#abstract-files). PhD thesis. The Ohio State University.
+Weatherholtz, K. (2015). [***Perceptual learning of systemic cross-category vowel variation***](https://etd.ohiolink.edu/ap/10?0::NO:10:P10_ACCESSION_NUM:osu1429782580#abstract-files). PhD thesis. The Ohio State University.
 
 
 
 ## Select Presentations
-* Weatherholtz, K., Liu, L. & Jaeger, T. F. (2015) **Rapid accent adaptation and constraints on cross-talker generalization**. Poster presented at the *29th annual CUNY conference on Human Sentence Processing*, Gainesville, Florida, March 3-5. [[**poster**]](/publications/Weatherholtz_etal_CUNY2016_poster.pdf)
+Weatherholtz, K., Liu, L. & Jaeger, T. F. (2015) **Rapid accent adaptation and constraints on cross-talker generalization**. Poster presented at the *29th annual CUNY conference on Human Sentence Processing*, Gainesville, Florida, March 3-5. [[**poster**]](/publications/Weatherholtz_etal_CUNY2016_poster.pdf)
 
-* Weatherholtz, K., Campbell-Kibler, K, & Jaeger, T. F. (2014). **Syntactic alignment and the mediating role of social perception and higher-order social cognition**. Poster presented at the *International Workshop on Language Production*, Geneva, July 16-18th. [[**poster**]](/publications/Weatherholtz_etal_IWLP2014_poster.pdf)
+Weatherholtz, K., Campbell-Kibler, K, & Jaeger, T. F. (2014). **Syntactic alignment and the mediating role of social perception and higher-order social cognition**. Poster presented at the *International Workshop on Language Production*, Geneva, July 16-18th. [[**poster**]](/publications/Weatherholtz_etal_IWLP2014_poster.pdf)
 
-* Weatherholtz, K., Walker, A., Melvin, S., Royer, A., & Clopper, C. G. (2014). **Effects of experience and expectations on adaptation to dialect variation in noise**. Poster presented at the *27th Annual CUNY Conference on Human Sentence Processing*, Columbus, Ohio, March 14-15th. [[**poster**]](/publications/Weatherholtz_etal_CUNY2014_poster.pdf)
+Weatherholtz, K., Walker, A., Melvin, S., Royer, A., & Clopper, C. G. (2014). **Effects of experience and expectations on adaptation to dialect variation in noise**. Poster presented at the *27th Annual CUNY Conference on Human Sentence Processing*, Columbus, Ohio, March 14-15th. [[**poster**]](/publications/Weatherholtz_etal_CUNY2014_poster.pdf)
 
 ---
 
@@ -87,6 +88,7 @@ Rochester, NY 14627 <br>
 
 ---
 
+<!---
 # Latest blog posts <a class="anchor" name="blog"></a>
 <ul class="post-list">
 {% for post in site.posts limit:5 %} 
@@ -96,3 +98,4 @@ Rochester, NY 14627 <br>
 
 <a markdown="0" href="/blog/" class="btn">More posts...</a>
 <a markdown="0" href="/tags/" class="btn">Tag index</a>
+-->

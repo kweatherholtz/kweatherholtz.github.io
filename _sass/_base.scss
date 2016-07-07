@@ -39,57 +39,42 @@ body {
 body {
 	font-family: $base-font;
 	color: $text-color;
-	@include font-size(15.5);
+	@include font-size(16);
 }
 
-
 p {
-	@include font-size(14,yes,19);
-	@include media($medium) {
-      @include font-size(17, yes, 25)
-    }
-	@include media($large) {
-      @include font-size(17, yes, 25)
-    }
+	@include font-size(18,yes,28);
 }
 
 li {
-	/*@include font-size(16,12,22);*/
-
-	@include font-size(13,11,21);
-	@include media($medium) {
-      @include font-size(16, 22, 22)
-    }
-	@include media($large) {
-      @include font-size(16, 22, 22)
-    }
-
+	@include font-size(16,12,24);
 }
 
 /* headings */
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font;
-  margin-bottom: .5rem;
-  font-weight: bold;
-  line-height: 1.15;
-  color: $heading-color;
-  text-rendering: optimizeLegibility;
+	font-family: $heading-font;
+	text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 h1 {
-  font-size: 2rem;
+	@include font-size(36);
 }
 h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
+	@include font-size(32);
 }
 h3 {
-  margin-top: 1.5rem;
-  font-size: 1.25rem;
+	@include font-size(28);
 }
-h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem;
+h4 {
+	@include font-size(24);
 }
+h5 {
+	@include font-size(20);
+}
+h6 {
+	@include font-size(18);
+}
+
 
 
 
