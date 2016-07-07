@@ -1,0 +1,12 @@
+base
+knitr
+animation
+USAboundaries
+dplyr
+ggplot2
+lubridate
+sp
+rgdal
+maptools
+gganimate
+viridis
