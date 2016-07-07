@@ -47,11 +47,11 @@ Here are the final results of my holiday weekend map-making expedition. Annotate
 
 The state-level map shows the United States on January 1st, every year from 1784 to 2000. (I grew up in Oklahoma -- but I'd forgotten that there was a short period just before Oklahoma became a state in 1907 during which part of the region was an organized incorporated US territory and part was unorganized. This animated map reminded me of that fact).
 
-![animated-state-map](/figs/2016-07-05-animated-map-of-US-settlement/animated-state-map-.gif)
+![animated-map-of-US-states](/figs/2016-07-05-animated-map-of-US-settlement/animated-map-of-US-states-.gif)
 
 The county-level map shows the United States on January 1st, every year from 1637 to 2000. One thing I like about this animation is that it highlights the degree of geographic separation during the early years of settlement.
 
-![animated-county-map](/figs/2016-07-05-animated-map-of-US-settlement/animated-county-map-.gif)
+![animated-map-of-US-counties](/figs/2016-07-05-animated-map-of-US-settlement/animated-map-of-US-counties-.gif)
 
 # R code
 
@@ -178,8 +178,7 @@ With these two helper functions in hand, we can now get to the business of makin
 
 {% highlight r %}
 # specify dates for which historic map data is to be gathered
-#state_dates <- seq(as.Date("1784-01-01"), as.Date("2000-01-01"), by = "year")
-state_dates <- seq(as.Date("1784-01-01"), as.Date("1786-01-01"), by = "year")
+state_dates <- seq(as.Date("1784-01-01"), as.Date("2000-01-01"), by = "year")
 
 # for faster rendering, try plotting a reduced date range
 # state_dates <- seq(as.Date("1784-01-01"), as.Date("1789-01-01"), by = "year")
@@ -236,8 +235,7 @@ gg_animate(p_state, interval = 0.1)
 
 {% highlight r %}
 # specify dates for which historic map data is to be gathered
-# county_dates <- seq(as.Date("1637-01-01"), as.Date("2000-01-01"), by = "year")
-county_dates <- seq(as.Date("1637-01-01"), as.Date("1639-01-01"), by = "year")
+county_dates <- seq(as.Date("1637-01-01"), as.Date("2000-01-01"), by = "year")
 
 # get county data for specified date range
 counties <- lapply(county_dates, 
