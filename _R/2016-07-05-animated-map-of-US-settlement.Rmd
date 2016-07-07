@@ -228,7 +228,7 @@ create_timeline <- function(boundary_df){
 
 The state-level map shows the United States on January 1st, every year from 1784 to 2000. (I grew up in Oklahoma -- but I'd forgotten that there was a short period just before Oklahoma became a state in 1907 during which part of the region was an organized incorporated US territory and part was unorganized. This animated map reminded me of that fact).
 
-```{r make-state-map, echo=FALSE, fig.width = 10, fig.show="animate"}
+```{r animated-state-map, echo=FALSE, fig.width = 10, fig.show="animate"}
 # specify dates for which historic map data is to be gathered
 #state_dates <- seq(as.Date("1784-01-01"), as.Date("2000-01-01"), by = "year")
 state_dates <- seq(as.Date("1784-01-01"), as.Date("1786-01-01"), by = "year")
@@ -286,7 +286,7 @@ gg_animate(p_state, interval = 0.1)
 
 The county-level map shows the United States on January 1st, every year from 1637 to 2000. One thing I like about this animation is that it highlights the degree of geographic separation during the early years of settlement.
 
-```{r make-county-map, echo=FALSE, fig.show="animate", cache.lazy=FALSE}
+```{r animated-county-map, echo=FALSE, fig.show="animate", cache.lazy=FALSE}
 # specify dates for which historic map data is to be gathered
 # county_dates <- seq(as.Date("1637-01-01"), as.Date("2000-01-01"), by = "year")
 county_dates <- seq(as.Date("1637-01-01"), as.Date("1639-01-01"), by = "year")
@@ -356,11 +356,11 @@ With these two helper functions in hand, we can now get to the business of makin
 
 ### State-level map
 
-```{r ref.label="make-state-map", echo=TRUE, eval=FALSE}
+```{r ref.label="animated-state-map", echo=TRUE, eval=FALSE}
 ```
 
 ### County-level map
-```{r ref.label="make-county-map", echo=TRUE, eval=FALSE}
+```{r ref.label="animated-county-map", echo=TRUE, eval=FALSE}
 ```
 
 ## Final notes

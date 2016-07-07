@@ -47,11 +47,11 @@ Here are the final results of my holiday weekend map-making expedition. Annotate
 
 The state-level map shows the United States on January 1st, every year from 1784 to 2000. (I grew up in Oklahoma -- but I'd forgotten that there was a short period just before Oklahoma became a state in 1907 during which part of the region was an organized incorporated US territory and part was unorganized. This animated map reminded me of that fact).
 
-![make-state-map](/figs/2016-07-05-animated-map-of-US-settlement/make-state-map-.gif)
+![animated-state-map](/figs/2016-07-05-animated-map-of-US-settlement/animated-state-map-.gif)
 
 The county-level map shows the United States on January 1st, every year from 1637 to 2000. One thing I like about this animation is that it highlights the degree of geographic separation during the early years of settlement.
 
-![make-county-map](/figs/2016-07-05-animated-map-of-US-settlement/make-county-map-.gif)
+![animated-county-map](/figs/2016-07-05-animated-map-of-US-settlement/animated-county-map-.gif)
 
 # R code
 
