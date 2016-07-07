@@ -44,32 +44,6 @@ Here are the final results of my holiday weekend map-making expedition. Annotate
 
 
 
-{% highlight r %}
-create_timeline <- function(boundary_df){
-  # determine how many year's worth of data will be plotted
-  years <- unique(boundary_df$year)
-
-  # create sequence that spans the width of the map (from min to max longitude),
-  # with evenly spaced intervals for years
-  timeline_range <- with(boundary_df, 
-                         seq(from = min(long),
-                             to = max(long),
-                             length.out = length(years)))
-  
-  # determine latitude coordinate for positioning timeline.
-  # (max latitude * 1.2 places timeline just above map)
-  timeline_y <- max(boundary_df$lat) * 1.2
-  
-  # collect timeline data into a df
-  timeline <- data.frame(
-    x = timeline_range,
-    y = timeline_y,
-    year = years
-  )
-  
-  return(timeline)
-}
-{% endhighlight %}
 
 The state-level map shows the United States on January 1st, every year from 1784 to 2000. (I grew up in Oklahoma -- but I'd forgotten that there was a short period just before Oklahoma became a state in 1907 during which part of the region was an organized incorporated US territory and part was unorganized. This animated map reminded me of that fact).
 
